@@ -1,0 +1,80 @@
+1. 
+
+HTML es el lenguaje estándar de marcado utilizado para la elaboración de páginas web, que sirve para definir la estructura básica de una página web.
+HTML se creó en el 1991 y sus versiones fueron la 1.0, la 2.0, la 3.2, la 4.01, xhtml y html5(actual).
+
+
+2.
+
+Compatibilidad:
+
+    -Compatibilidad con el contenido existente
+
+    -Degradación con dignidad
+
+    -No reinventar la rueda
+
+    -Pavimentar los senderos existentes
+
+    -Evolución, no revolución
+
+En resumen HTML debe seguir funcionando con contenido existente, evitando romper páginas viejas y permitiendo una evolución progresiva del lenguaje.
+
+Utilidad:
+
+    -Resolver problemas reales
+
+    -Prioridad de los grupos de interés
+
+    -Diseño seguro
+
+    -Separación de intereses
+
+    -Consistencia del DOM
+
+En resumen HTML debe resolver problemas reales, priorizar a los usuarios y mantener una estructura clara, segura y práctica.
+
+Interoperabilidad:
+
+    -Comportamiento bien definido
+
+    -Evitar complejidad innecesaria
+
+    -Manejo de errores
+
+En resumen HTML debe comportarse de manera consistente en distintos navegadores, con reglas claras, simples y tolerantes a errores.
+
+Acceso universal:
+
+    -Independencia de los medios
+
+    -Soporte para idiomas del mundo
+
+    -Accesibilidad
+
+En resumen HTML debe ser accesible para todos, funcionando en distintos dispositivos, idiomas y para personas con discapacidades.
+
+
+3.
+
+Un elemento o atributo desaprobado es el que queda anticuado frente a estructuras nuevas, pero que siguen siendo soportados por los navegadores.
+Un elemento o atributo obsoleto es aquel para el cual no hay garantía de soporte por parte de los navegadores.
+
+4.
+
+Un DTD define la estructura y los elementos permitidos de un documento HTML.
+En HTML 4.01 hay tres tipos:
+    Strict
+    Transitional
+    Frameset
+
+5.
+
+Los metadatos en HTML son información sobre los datos que sirve para describir el contenidos del docuemento y características de la página como el autor.
+
+Los mismos se especifican en dos pasos:
+
+1.Definir una propiedad y su valor, lo cual puede hacerse de dos formas:
+    Dentro del documento, mediante el elemento <meta>.
+    Desde fuera del documento, utilizando el elemento <link>.
+2.Asociar un perfil, que define las propiedades y sus valores permitidos, mediante el atributo profile del elemento <head>.

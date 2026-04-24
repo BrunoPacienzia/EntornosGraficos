@@ -1,0 +1,314 @@
+3.a
+
+<a href="http://www.google.com.ar">Click aquí para ir a Google</a>
+
+Aparece un enlace que al hacer click abre google en la misma pestaña.
+
+<a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a>
+
+Aparece un enlace que al hacer click abre google en otra pestaña.
+
+<a href="http://www. google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help">
+
+En este caso no se ve nada en el navegador.
+
+<a href="#">Click aquí para ir a Google</a>
+
+Aparece un enlace que no lleva a ningun lado.
+
+<a href="#arriba">Click aquí para volver arriba</a>
+<a name="arriba" id="arriba"></a>
+
+Estos trabajan en conjunto, ya que al hacer click en el enlace del primero me lleva a donde esta el segundo en la pagina.
+
+
+3.b
+
+<p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p>
+
+En este caso, solo puedo clickear el enlace click aqui para ir a Google.
+
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p>
+
+Acá solo puedo clickear a la imagen (o el texto alternativo ya que no existe im1.jpg) para ir a Google.
+
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="ima
+gen1" />Click aquí</a></p>
+
+Tanto el click aqui como la imagen son el mismo enlace que lleva a Google.
+
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> <a
+href="http://www.google.com.ar">Click aquí</a></p>
+
+En este caso son dos enlaces diferentes pero que ambos llevan a Google.
+
+3.c
+
+<ul>
+<li>xxx</li>
+<li>yyy</li>
+<li>zzz</li>
+</ul>
+
+Lista desordenada (muesta con puntos) de tres elementos (xxx, yyy, zzz)
+
+<ol>
+<li>xxx</li>
+<li>yyy</li>
+<li>zzz</li>
+</ol>
+<ol>
+
+Lista ordenada (que va del 1 al 3) y los elementos son los mismos que antes.
+
+<li>xxx</li>
+</ol>
+<ol>
+<li value="2">yyy</li>
+</ol>
+<ol>
+<li
+value="3">zzz</li>
+</ol>
+
+Es parecido al anterior pero en este caso son 3 listas ordenadas, no una sola.
+
+<blockquote>
+<p>1. xxx<br />
+2. yyy<br />
+3. zzz</p>
+</blockquote>
+
+No es una lista, es un bloque de cita, los números están explicitados, no creados por HTML.
+
+3.d
+
+<table border="1" width="300">
+<tr>
+<th>Columna 1</th>
+<th>Columna 2</th>
+</tr>
+<tr>
+<td>Celda 1</td>
+<td>Celda 2</td>
+</tr>
+<tr>
+<td>Celda 3</td>
+<td>Celda 4</td>
+</tr>
+</table>
+
+
+<table border="1" width="300">
+<tr>
+<td><div align="center"><strong>Columna1</strong></div></td>
+<td><div align="center"><strong>Columna2</strong></div></td>
+</tr>
+<tr>
+<td>Celda 1</td>
+<td>Celda 2</td>
+</tr>
+<tr>
+<td>Celda 3</td>
+<td>Celda 4</td>
+</tr>
+</table>
+
+
+La principal diferencia es que una usa el th para los encabezados y la otra lo simula con un div 
+para centrarlo y un strong para ponerlo en negrita.
+
+3.e
+
+<table width="200">
+      <caption>
+        Título
+      </caption>
+      <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+      </tr>
+      <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+      </tr>
+    </table>
+
+    <table width="200">
+      <tr>
+        <td colspan="3"><div align="center">Título</div></td>
+      </tr>
+      <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+      </tr>
+      <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+      </tr>
+    </table>
+
+Similar al caso anterior, la primera tabla usa caption para ponerle un titulo a la tabla
+mientras que la segunda trata de simularlo con un td que ocupe las tres columnas y lo centra
+con un div.
+
+
+3.f
+
+    <table width="200">
+      <tr>
+        <td colspan="3"><div align="center">Título</div></td>
+      </tr>
+      <tr>
+        <td rowspan="2" bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+      </tr>
+      <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+      </tr>
+    </table>
+
+    <table width="200">
+      <tr>
+        <td colspan="3"><div align="center">Título</div></td>
+      </tr>
+      <tr>
+        <td colspan="2" bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+      </tr>
+      <tr>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+        <td bgcolor="#dddddd">&nbsp;</td>
+      </tr>
+    </table>
+
+En la primer tabla la primer celda ocupa dos filas y en la segudna la primer celda ocupa dos columnas.
+
+3.g
+
+    <table width="200" border="1">
+      <tr>
+        <td colspan="3"><div align="center">Título</div></td>
+      </tr>
+      <tr>
+        <td colspan="2" rowspan="2">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="50%">&nbsp;</td>
+      </tr>
+    </table>
+
+    <table width="200" border="1" cellpadding="0" cellspacing="0">
+      <tr>
+        <td colspan="2"><div align="center">Título</div></td>
+      </tr>
+      <tr>
+        <td rowspan="2">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="50%">&nbsp;</td>
+      </tr>
+    </table>
+
+La segunda tabla especifica cellpadding="0" cellspacing="0" lo que elimina los espacios entre celdas y el padding,
+mientras que la primera usa el default.
+
+3.h
+
+<form id="form1" name="form1" action="procesar.php" method="post" target="_blank">
+<fieldset>
+<legend>LOGIN</legend>
+Usuario: <input type="text" id="usu1" name="usu1" value="xxx" /><br />
+Clave: <input type="password" id="clave1" name="clave1" value="xxx" />
+</fieldset>
+<input type="submit" id="boton1" name="boton1" value="Enviar" />
+</form>
+
+En este caso los campos usuario y clave tienen un valor por defecto. Ademas al hacer click en enviar,
+se hace un POST a procesar.php con los datos. 
+
+<form id="form2" name="form2" action="" method="get" target="_blank">
+LOGIN<br />
+<label>Usuario: <input type="text" id="usu2" name="usu2" /></label><br />
+<label>Clave: <input type="text" id="clave2" name="clave2" /></label><br />
+<input type="submit" id="boton2" name="boton2" value="Enviar" />
+</form>
+
+Al hacer click en el boton, me hace abre en una nueva pestaña la misma pagina.
+No tiene un fildset como los otros dos que agrupan los campos.
+
+<form id="form3" name="form3" action="mailto:xx@xx.com” enctype=text/plain method="p
+ost" target="_blank">
+<fieldset>
+<legend>LOGIN</legend>
+Usuario: <input type="text" id="usu3" name="usu3" /><br />
+Clave: <input type="password" id="clave3" name="clave3" />
+</fieldset>
+<input type="reset" id="boton3" name="boton3" value=
+"Enviar" />
+</form>
+
+Al ser un boton de reset, me borra los datos del form cada vez que lo toco.
+
+
+3.i
+
+<label>Botón 1
+<button type="button" name="boton1" id="boton1">
+<img src="logo.jpg" alt="Botón con imagen " width="30" height="20" /><br />
+<b>CLICK AQUÍ</b></button></label>
+
+<label>Botón 2
+<input type="button" name="boton2" id="boton2" value="CLICK AQUÍ" />
+</label>
+
+El primero es un boton, lo que me permite poner una imagen y un texto debajo.
+El segundo es un input de tipo boton que solo me deja ponerle un texto, en este caso CLICK AQUI.
+
+
+3.j
+
+<p><label><input type="radio" name="opcion" id="X" value="X" />X</label><br />
+<label><input type="radio" name="opcion" id="Y" value="Y" />Y</label></p>
+
+<p><label><input type="radio" name="opcion1" id="X" value="X" />X</label><br />
+<label><input type="radio" name="opcion2" id="Y" value="Y" />Y</label></p>
+
+En el primer caso al tener el mismo name, no me deja elegir ambas opciones, mientras
+que en el segundo caso sí porque tinene diferente name.
+
+3.k
+
+    <select name="lista">
+      <optgroup label="Caso 1">
+        <option>Mayo</option>
+        <option>Junio</option>
+      </optgroup>
+      <optgroup label="Caso 2">
+        <option>Mayo</option>
+        <option>Junio</option>
+      </optgroup>
+    </select>
+
+    <select name="lista[]" multiple="multiple">
+      <optgroup label=" Caso 1">
+        <option>Mayo</option>
+        <option>Junio</option>
+      </optgroup>
+      <optgroup label=" Caso 2">
+        <option>Mayo</option>
+        <option>Junio</option>
+      </optgroup>
+    </select>
+
+El primer caso es una lista deplegable que caundo elijo la opcion, se cierra.
+En el segundo caso, la lista me permite scrollear entre las opciones pero no se cierra aunque elija alguna.

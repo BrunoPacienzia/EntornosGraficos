@@ -1,0 +1,179 @@
+2.a
+
+Elemento:
+    <!-- Código controlado el día 12/08/2009 →
+
+Efecto:
+    Define un comentario.
+
+Seccion:
+    Cualquiera
+
+Etiquetas:
+    <!-- -->
+
+Atributos:
+    No tiene atributos.
+
+2.b
+
+Elemento:
+    <div id="bloque1">Contenido del bloque1</div>
+
+Efecto:
+    Define un container con contenido Contenido del bloque1.
+
+Seccion:
+    body
+
+Etiquetas:
+    <div> </div> (obligatorio)
+
+Atributos:  
+    id: para identificacion, valor = bloque1 (opcional)
+
+2.c
+
+Elemento:
+    <img src="" alt="lugar imagen" id="im1" name="im1" width="32" height="32" longdesc="detalles.htm" />
+
+Efecto:
+    Inserta una imagen
+
+Seccion:
+    body.
+
+Etiquetas:
+    <img ..../> (obligatorio)
+
+Atributos:
+
+    src: indica la ruta de la imagen, valor = "" (obligatorio)
+    alt: indica texto alternativo, valor= lugar imagen (opcional)
+    id: para identificación, valor = im1 (opcional)
+    name: nombre, valor = im1 (opcional)
+    width: ancho, valor = 32 (opcional)
+    height: alto, valor = 32 (opcional)
+    longdesc: descripcion larga, valor = detalles.htm (opcional)
+
+
+2.d
+
+Elementos:
+    <meta name="keywords" lang="es" content="casa, compra, venta, alquiler " />
+    <meta http-equiv="expires" content="16-Sep-2019 7:49 PM" />
+
+Efecto:
+    Define cuales son las palabras clave del sitio y cuando expira el contenido de la misma.
+
+Seccion:
+    Head
+
+Etiquetas:
+    <meta ..../>
+
+Atributos:
+    name: indica el tipo de metadato, valor = keywords (opcional)
+    lang: indica el idioma del contenido, valor = es (opcional)
+    content: define el valor del metadato, valor = casa, compra, venta, alquiler (obligatorio)
+    http-equiv: simula cabeceras de respuesta HTTP, valor = expires (opcional)
+    content: define el valor del metadato, valor = 16-Sep-2019 7:49 PM (obligatorio)
+
+
+2.e
+
+Elemento:
+    <a href="http://www.e-style.com.ar/resumen.html" type="text/html" hreflang="es" charset="utf-8" rel="help">Resumen HTML </a>
+
+Efecto:
+    Define un enlace para redigir a la pagina resumen.
+
+Seccion:
+    body
+
+Etiquetas:
+    <a> </a>
+
+Atributos:
+    href: indica la url, valor = http://www.e-style.com.ar/resumen.html (obligatorio)
+    type: tipo de contenido del destino, valor = text/html (opcional)
+    hreflang: idioma del documento destino, valor = es (opcional)
+    charset: codificacion de caracteres del destino, valor = utf-8 (opcional)
+    rel: relacion entre los documentos, valor = help (opcional)
+
+
+2.f
+
+    <table width="200" summary="Datos correspondientes al ejercicio vencido">
+        <caption align="top"> Título </caption>
+        <tr>
+            <th scope="col">&nbsp;</th>
+            <th scope="col">A</th>
+            <th scope="col">B</th>
+            <th scope="col">C</th>
+        </tr>
+        <tr>
+            <th scope="row">1º</th>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <th scope="row">2º</th>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+
+Efecto: 
+    Crea una tabla de tres columnas y dos filas sobre Datos correspondientes al ejercicio vencido.
+
+Seccion:
+    body
+
+Elemento 1:
+    table
+
+Etiquetas:
+    <table> </table>
+
+Atributos:
+    width: define el ancho, valor = 200 (opcional)
+    summary: resumen de la tabla, valor = Datos correspondientes al ejercicio vencido (opcional)
+
+Elemento 2:
+    caption
+
+Etiquetas:
+    <caption> </caption>
+
+Atributos:
+    align: define la posición de la caption respecto a la tabla, valor = top (opcional)
+
+Elemento 3:
+    tr
+
+Etiquetas:
+    <tr> </tr>
+
+Atributos:
+    No tiene
+
+Elemento 4:
+    th
+
+Etiquetas:
+    <th> </th>
+
+Atributos:
+    scope: indica si es columna o fila, valor = row/col segun la linea (opcional)
+
+Elemento 5:
+    td
+
+Etiquetas:
+    <td> </td>
+
+Atributos:
+    No tiene
