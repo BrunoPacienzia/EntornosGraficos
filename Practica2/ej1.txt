@@ -1,0 +1,59 @@
+1. ¿ Qué es CSS y para qué se usa? 
+
+CSS (hojas de estilo en cascada) es un lenguaje de hojas de estilo que permite aplicar estilos de manera selectiva a elementos en documentos HTML. Describe cómo los elementos dispuestos en la página son presentados al usuario, permitiendo especificar estilos como el tamaño, fuentes, color, espaciado entre textos y recuadros así como el lugar donde disponer texto e imágenes en la página. 
+
+
+2. CSS utiliza reglas para las declaraciones de estilo, ¿cómo funcionan? 
+Las hojas de estilo en CSS están compuestas de reglas. Y cada regla tiene tres partes:           - El selector (ejemplo: “body”), el cual le dice al navegador la parte del documento que se verá afectada por la regla.                                                                                                   
+- La propiedad (ejemplo, 'color' y 'background-color'), las cuales especifican qué aspecto del diseño va a cambiarse  
+- El valor ('purple' y '#d8da3d'), el cual da el valor para la propiedad.
+
+3. ¿ Cuáles son las tres formas de dar estilo a un documento? 
+
+Nivel de elemento HTML: se define con la propiedad style para dicho elemento.
+
+Niel de página: se define con <style> </style> dentro de la cabecera.
+
+En un archivo externo: es un archivo separado con extensión css que contiene las reglas de estilo pero está separado del archivo HTML.
+
+
+4. ¿ Cuáles son los distintos tipos de selectores más utilizados? Ejemplifique cada uno.
+
+Selectores de tipo: identifican a un tipo de elemento dentro del código HTML.
+Ejemplo: H1 {text-align: center}
+
+Selectores de clase: identifica a una clase que nosotros hayamos creado dentro de nuestro código HTML con class = … Para identificar a la clase se empieza con un punto. Ejemplo: .clase {font-weight: bold}
+
+Selectores de ID: parecido al anterior pero identifican a un ID por lo que se aplican a un único elemento de una página. Para identificar a un ID se escribe con un #. Ejemplo: #titulo1 {text-align: center}
+
+Selectores de atributo: permiten seleccionar elementos según sus propiedades o valor asignado a esas propiedades. Ejemplo P[CLASS] {margin-left: 1cm} lo cual va a funcionar en cualquier <p></p> con class especificado.
+
+Selector universal: representa TODOS los elementos de la página. Ejemplo: * {color: red}.
+
+Agrupamiento: si varios selectores comparten estilo, se pueden agrupar con comas. Ejemplo H1, P, .class {font-family: Arial, Sans-serif}
+
+
+5. ¿ Qué es una pseudo-clase? Cuáles son las más utilizadas aplicadas a vínculos? 
+
+Una pseudo-clase en CSS es una palabra clave que se añade a un selector para especificar un estado especial del elemento seleccionado. Permiten aplicar estilos basándose en factores externos como la interacción del usuario, el historial de navegación o la estructura del documento, sin necesidad de añadir clases adicionales al HTML.
+Las pseudo-clases vínculo mas utilizadas son: 
+Las aplicaciones del usuario normalmente muestran los vínculos no visitados de un modo diferenciado de aquellos previamente visitados. CSS proporciona las pseudo-clases ':link' y ':visited' para distinguirlos:
+La pseudo-clase :link se aplica a los vínculos que aún no han sido visitados.
+La pseudo-clase :visited se aplica una vez que el vínculo ha sido visitado por el usuario.
+
+6. ¿ Qué es la herencia? 
+
+La herencia en CSS significa que algunos estilos que se le ponen a un elemento padre se transmiten automáticamente a sus elementos hijos. Ejemplo:
+
+<body>
+<p>Soy un párrafo</p>
+</body> 
+
+Acá, p es hijo de body, por lo que si aplico un estilo a body, se le va a aplicar a p.
+
+
+7. ¿ En qué consiste el proceso denominado cascada? 
+
+Es el proceso por el cual los estilos de distintas hojas de estilo y reglas se combinan para decidir cuál se aplica finalmente a un elemento HTML.
+
+Se llama cascada porque los estilos se van acumulando y superponiendo desde diferentes fuentes, formando una jerarquía.

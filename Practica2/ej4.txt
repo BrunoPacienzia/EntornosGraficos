@@ -1,0 +1,58 @@
+Dadas las siguientes declaraciones:
+
+* {color:green; }
+a:link {color:gray }
+a:visited{color:blue }
+a:hover {color:fuchsia }
+a:active {color:red }
+p {font-family: arial,helvetica;font-size: 10px;color:black; }
+.contenido{font-size: 14px;font-weight: bold; }
+
+
+Analizar los siguientes códigos y comparar sus efectos. Explicar:
+
+<body>
+  <p class="contenido" style="font-weight: normal">
+    Este es un texto ...............
+  </p>
+  <table>
+    <tr>
+      <td>Y esta es una tabla.......</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.google.com.ar">con un enlace</a></td>
+    </tr>
+  </table>
+</body>
+
+En este código el contenido del elemento párrafo(Este es un texto......) no va a estar en negrita porque style="font-weight: normal"pisa a la definición de contenido de font-weight: bold;.
+Además, el color del contenido del párrafo es negro porque p {color:black; } pisa al * {color:green; }.
+El contenido del párrafo tiene como familia de fuentes: arial,helvetica por p {font-family: arial,helvetica;}.
+El contenido del párrafo tiene un tamaño de 14px porque es class contenido y .contenido{font-size: 14px} pisa a  p {font-size: 10px;}
+Además, el contenido de la tabla es verde por * {color:green; }.
+El link aparce en gris por a:link {color:gray }.
+Al apoyar el mouse sobre el link se pone fucsia por a:hover {color:fuchsia }.
+Al clickear el link se pone rojo por a:active {color:red }.
+Por último, al clicker el link y volver el mismo se ve azul por a:visited{color:blue }.
+
+
+<body class="contenido">
+  <p>Este es un texto................</p>
+  <table>
+    <tr>
+      <td>Y esta es una tabla.......</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.google.com.ar">con un enlace</a></td>
+    </tr>
+  </table>
+</body>
+En este código todo está en negrita porque body es class contenido con .contenido{font-weight: bold; } y ningún hijo tiene definido otro estilo.
+Además, el color del contenido del párrafo es negro porque p {color:black; } pisa al * {color:green; }.
+El contenido del párrafo tiene como familia de fuentes: arial,helvetica por p {font-family: arial,helvetica;}.
+El contenido del párrafo tiene un tamaño de 10px porque  p {font-size: 10px;} es más relevante que la herencia de .contenido{font-size: 14px}  
+Además, el contenido de la tabla es verde por * {color:green; }.
+Por último, el link aparce en gris por a:link {color:gray }.
+Al apoyar el mouse sobre el link se pone fucsia por a:hover {color:fuchsia }.
+Al clickear el link se pone rojo por a:active {color:red }.
+Por último, al clicker el link y volver el mismo se ve azul por a:visited{color:blue }.

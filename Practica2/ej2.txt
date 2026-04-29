@@ -1,0 +1,47 @@
+p#normal { font-family: arial,helvetica; font-size: 11px; font-weight: bold; }
+
+Regla: 
+  p#normal{...} selector: p#normal.
+Declaraciones:
+  font-family: arial,helvetica; define la familia de fuente a arial, helvetica.
+  font-size: 11px; define el tamaño de la letra a 11px.
+  font-weight: bold; pone la letra en negrita.
+Efecto:
+  Aplica sobre el elemento parrafo con id normal los estilos anteriormente mencionados.
+  Aplica sobre:
+  <p id="normal">Este es un párrafo</p>
+
+*#destacado { border-style: solid; border-color: blue; border-width: 2px; }
+
+Regla: 
+  *#destacado{...} selector: *#destacado.
+Declaraciones:
+  border-style: solid; define el estilo del borde a una linea continua.
+  border-color: blue; le pone al borde color azul.
+  border-width: 2px; define el ancho del borde a 2px.
+Efecto:
+  Aplica sobre cualquier elemento con id destacado los estilos anteriormente mencionados.
+  Aplica sobre:
+  <p id="destacado">Este es otro párrafo</p>
+  <table id="destacado">
+
+#distinto { background-color: #9EC7EB; color: red; }
+
+Regla: 
+  #distinto{...} selector: #distinto.
+Declaraciones:
+  background-color: #9EC7EB; define el color de fondo a #9EC7EB.
+  color: red; define el color de la letra a rojo.
+Efecto:
+  Aplica sobre el elemento con id distinto los estilos anteriormente mencionados.
+  Aplica sobre:
+  <p id="distinto">Este es el último párrafo</p>
+
+<p id="normal">Este es un párrafo</p>
+<p id="destacado">Este es otro párrafo</p>
+<table id="destacado">
+  <tr>
+    <td>Esta es una tabla</td>
+  </tr>
+</table>
+<p id="distinto">Este es el último párrafo</p>

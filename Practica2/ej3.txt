@@ -1,0 +1,69 @@
+p.quitar {
+    color: red;
+}
+
+Regla: 
+  p.quitar{...} selector: p.quitar.
+Declaraciones:
+  color: red; cambia el color de la letra a rojo.
+Efecto:
+  Aplica sobre el elemento parrafo con clase quitar el estilo anteriormente mencionado.
+  Aplica sobre:
+   <p class="quitar">
+    Este párrafo debe ser quitado de la obra…
+   <br />xxxxxxxxxxxxxxxxxxxxxxxxx
+   </p>
+   <p class="quitar importante">Se pueden aplicar varias clases a la vez</p
+
+*.desarrollo {
+    font-size: 8px;
+}
+
+Regla: 
+  *.desarrollo{...} selector: *.desarrollo.
+Declaraciones:
+  font-size: 8px; define el tamaño de la letra como 8px.
+Efecto:
+  Aplica sobre cualquier elemento con clase desarrollo el estilo anteriormente mencionado.
+  Aplica sobre:
+  <p class="desarrollo">
+    En este primer párrafo trataremos lo siguiente:
+   <br />xxxxxxxxxxxxxxxxxxxxxxxxx
+   </p>
+
+.importante {
+    font-size: 20px;
+}
+
+Regla: 
+  .importante{...} selector: .importante.
+Declaraciones:
+  font-size: 20px; define el tamaño de la letra como 20px.
+Efecto:
+  Aplica sobre los elementos con clase importante. el estilo anteriormente mencionado.
+  Aplica sobre:
+  <p class="importante">
+    Y este es el párrafo más importante de la obra…
+  <br />xxxxxxxxxxxxxxxxxxxxxxxxx
+  </ p>
+  <p class="quitar importante">Se pueden aplicar varias clases a la vez</p
+
+
+<p class="desarrollo">
+    En este primer párrafo trataremos lo siguiente:
+<br />xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+<p class="quitar">
+    Este párrafo debe ser quitado de la obra…
+<br />xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+<p >
+    En este otro párrafo trataremos otro tema:<br />
+xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+<p class="importante">
+    Y este es el párrafo más importante de la obra…
+<br />xxxxxxxxxxxxxxxxxxxxxxxxx
+</ p>
+<h1 class="quitar">Este encabezado también debe ser quitado de la obra</h1>
+<p class="quitar importante">Se pueden aplicar varias clases a la vez</p
