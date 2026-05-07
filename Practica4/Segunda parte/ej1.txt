@@ -1,0 +1,1 @@
+Los códigos son equivalentes, construyen los mismos arrays.

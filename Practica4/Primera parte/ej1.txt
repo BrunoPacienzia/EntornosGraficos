@@ -1,0 +1,40 @@
+Variables:
+a -> Boolean
+b -> string
+c ->string
+d ->integer
+f -> integer
+g -> integer
+i -> integer
+
+Operadores:
+= 
+* 
++= 
+++ 
+? :
+,
+()
+
+Funciones (definidas por el usuario):
+
+function doble($i) {
+    return $i*2;
+}
+parametro ($i) un numero
+
+Estructuras de control:
+
+if (is_int($d)) {
+    $d += 4;
+}
+
+if (is_string($a)) {
+    echo "Cadena: $a";
+}
+
+$d = $a ? ++$d : $d*3;
+
+Salida por pantalla:
+
+booleanstringstringinteger1xyzxyz184444  

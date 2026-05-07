@@ -1,0 +1,2 @@
+a. Se utiliza para generar una tabla en HTML con 5 filas y 2 columnas de manera dinámica.
+b. Se utiliza para mostrar un formulario donde el usuario ingresa su edad y el programa determina si es mayor o menor de edad.

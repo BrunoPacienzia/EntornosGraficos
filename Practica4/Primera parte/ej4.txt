@@ -1,0 +1,2 @@
+El primer echo va a devolver solo "El " ya que no estan definidas las variables flor y color
+El segundo echo devuelve "El clavel blanco" porque ahora toma la referencia del archivo datos.php para asignarle el valor a las variables.
