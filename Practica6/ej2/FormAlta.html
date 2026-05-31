@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Formulario Alta Capitales</title>
+  </head>
+  <body>
+    <form action="Alta.php" method="POST" name="FormAlta">
+      <table width="225">
+        <tr>
+          <td>Ciudad:</td>
+          <td><input type="TEXT" name="ciudad" size="20" maxlength="40" /></td>
+        </tr>
+        <tr>
+          <td>Pais:</td>
+          <td>
+            <input type="text" name="pais" size="20" maxlength="8" />
+          </td>
+        </tr>
+        <tr>
+          <td>Habitantes:</td>
+          <td>
+            <input type="TEXT" name="habitantes" size="20" maxlength="20" />
+          </td>
+        </tr>
+        <tr>
+          <td>Superficie:</td>
+          <td>
+            <input type="TEXT" name="superficie" size="20" maxlength="40" />
+          </td>
+        </tr>
+        <tr>
+          <td>Tiene Metro:</td>
+          <td>
+            <select name="tieneMetro">
+              <option value="1">Si</option>
+              <option value="0">No</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <input type="SUBMIT" name="Submit" value="Agregar" />
+            <p><a href="Menu.html">Volver al menu del ABM</a></p>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
